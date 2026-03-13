@@ -1,5 +1,21 @@
 .card {
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid crimson;
-    border-radius: 12px;
+    border-radius: 0 12px 40px 12px;
+}
+
+.bottle {
+    img {
+        width: 250px;
+    }
+    .btn {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(43, 42, 42);
+    }
 }
