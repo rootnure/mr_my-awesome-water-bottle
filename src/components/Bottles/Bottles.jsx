@@ -49,7 +49,7 @@ const Bottles = ({ bottlesPromise }) => {
     };
 
     return (
-        <div>
+        <div style={{ position: "relative" }}>
             <h1>My Awesome Water Bottles</h1>
             <h3>Bottles: {bottles.length}</h3>
             <Cart handleRemoveFromCart={handleRemoveFromCart} cart={cart} />
