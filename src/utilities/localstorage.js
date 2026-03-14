@@ -14,7 +14,14 @@ const addCartItemToLocalStorage = (id) => {
     saveCartToLS(cart);
 }
 
+const removeItemFromLocalStorage = id => {
+    const storedCart = getCartFromLocalStorage();
+    delete storedCart[id];
+    saveCartToLS(storedCart);
+}
+
 export {
     getCartFromLocalStorage as getCartLS,
-    addCartItemToLocalStorage as setCartLS
+    addCartItemToLocalStorage as setCartLS,
+    removeItemFromLocalStorage as removeCartItemLS
 }
