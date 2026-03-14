@@ -1,10 +1,11 @@
+const cartName = "__bottle-cart";
 const getCartFromLocalStorage = () => {
-    const storedCartString = localStorage.getItem('cart');
+    const storedCartString = localStorage.getItem(cartName);
     return storedCartString ? JSON.parse(storedCartString) : {};
 }
 
 const saveCartToLS = cart => {
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem(cartName, JSON.stringify(cart));
 }
 
 const addCartItemToLocalStorage = (id) => {
